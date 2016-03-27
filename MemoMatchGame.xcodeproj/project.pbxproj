@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513F57B8FF75139110FADBA1 /* Pods_MemoMatchGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAB16A0EE86040332ADD88F /* Pods_MemoMatchGame.framework */; };
+		9A794FA21CA872950078C9EB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A794FA11CA872950078C9EB /* CustomTextField.swift */; };
+		9A794FA41CA878D10078C9EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A794FA31CA878D10078C9EB /* CustomButton.swift */; };
 		9AD27ABC1CA830C400BC7A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27ABB1CA830C400BC7A67 /* AppDelegate.swift */; };
-		9AD27ABE1CA830C400BC7A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27ABD1CA830C400BC7A67 /* ViewController.swift */; };
+		9AD27ABE1CA830C400BC7A67 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD27ABD1CA830C400BC7A67 /* LoginVC.swift */; };
 		9AD27AC11CA830C400BC7A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD27ABF1CA830C400BC7A67 /* Main.storyboard */; };
 		9AD27AC31CA830C400BC7A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD27AC21CA830C400BC7A67 /* Assets.xcassets */; };
 		9AD27AC61CA830C400BC7A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD27AC41CA830C400BC7A67 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C98D5424ECBC4B5C8F0EFBD /* Pods-MemoMatchGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoMatchGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemoMatchGame/Pods-MemoMatchGame.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC5BAD9A38E1C6FFF029CEF /* Pods-MemoMatchGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoMatchGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoMatchGame/Pods-MemoMatchGame.release.xcconfig"; sourceTree = "<group>"; };
+		9A794F9C1CA863710078C9EB /* MemoMatchGame-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoMatchGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		9A794FA11CA872950078C9EB /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9A794FA31CA878D10078C9EB /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9AAB16A0EE86040332ADD88F /* Pods_MemoMatchGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoMatchGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD27AB81CA830C400BC7A67 /* MemoMatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoMatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD27ABB1CA830C400BC7A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AD27ABD1CA830C400BC7A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AD27ABD1CA830C400BC7A67 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9AD27AC01CA830C400BC7A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AD27AC21CA830C400BC7A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD27AC51CA830C400BC7A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +38,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513F57B8FF75139110FADBA1 /* Pods_MemoMatchGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		027AC2CC1FF0B24DAC27167A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AAB16A0EE86040332ADD88F /* Pods_MemoMatchGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A794F9F1CA86F6B0078C9EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A794FA11CA872950078C9EB /* CustomTextField.swift */,
+				9A794FA31CA878D10078C9EB /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9A794FA01CA86F710078C9EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AD27ABD1CA830C400BC7A67 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		9AD27AAF1CA830C400BC7A67 = {
 			isa = PBXGroup;
 			children = (
 				9AD27ABA1CA830C400BC7A67 /* MemoMatchGame */,
 				9AD27AB91CA830C400BC7A67 /* Products */,
+				CAB4CB35B0BEE6BA326A361A /* Pods */,
+				027AC2CC1FF0B24DAC27167A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +91,25 @@
 		9AD27ABA1CA830C400BC7A67 /* MemoMatchGame */ = {
 			isa = PBXGroup;
 			children = (
+				9A794FA01CA86F710078C9EB /* Controller */,
+				9A794F9F1CA86F6B0078C9EB /* View */,
 				9AD27ABB1CA830C400BC7A67 /* AppDelegate.swift */,
-				9AD27ABD1CA830C400BC7A67 /* ViewController.swift */,
 				9AD27ABF1CA830C400BC7A67 /* Main.storyboard */,
 				9AD27AC21CA830C400BC7A67 /* Assets.xcassets */,
 				9AD27AC41CA830C400BC7A67 /* LaunchScreen.storyboard */,
 				9AD27AC71CA830C400BC7A67 /* Info.plist */,
+				9A794F9C1CA863710078C9EB /* MemoMatchGame-Bridging-Header.h */,
 			);
 			path = MemoMatchGame;
+			sourceTree = "<group>";
+		};
+		CAB4CB35B0BEE6BA326A361A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C98D5424ECBC4B5C8F0EFBD /* Pods-MemoMatchGame.debug.xcconfig */,
+				4DC5BAD9A38E1C6FFF029CEF /* Pods-MemoMatchGame.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AD27ACA1CA830C400BC7A67 /* Build configuration list for PBXNativeTarget "MemoMatchGame" */;
 			buildPhases = (
+				373CB8FEB35DF19006B2851C /* Check Pods Manifest.lock */,
 				9AD27AB41CA830C400BC7A67 /* Sources */,
 				9AD27AB51CA830C400BC7A67 /* Frameworks */,
 				9AD27AB61CA830C400BC7A67 /* Resources */,
+				D55E147280D165E4ECEE61F1 /* Embed Pods Frameworks */,
+				5CA76A5B209D4AE64142B375 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +181,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		373CB8FEB35DF19006B2851C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA76A5B209D4AE64142B375 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemoMatchGame/Pods-MemoMatchGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D55E147280D165E4ECEE61F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemoMatchGame/Pods-MemoMatchGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AD27AB41CA830C400BC7A67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD27ABE1CA830C400BC7A67 /* ViewController.swift in Sources */,
+				9A794FA41CA878D10078C9EB /* CustomButton.swift in Sources */,
+				9AD27ABE1CA830C400BC7A67 /* LoginVC.swift in Sources */,
 				9AD27ABC1CA830C400BC7A67 /* AppDelegate.swift in Sources */,
+				9A794FA21CA872950078C9EB /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,23 +350,30 @@
 		};
 		9AD27ACB1CA830C400BC7A67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C98D5424ECBC4B5C8F0EFBD /* Pods-MemoMatchGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MemoMatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.soares.MemoMatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoMatchGame/MemoMatchGame-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9AD27ACC1CA830C400BC7A67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC5BAD9A38E1C6FFF029CEF /* Pods-MemoMatchGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MemoMatchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felipe.soares.MemoMatchGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoMatchGame/MemoMatchGame-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -288,6 +396,7 @@
 				9AD27ACC1CA830C400BC7A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
